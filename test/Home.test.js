@@ -9,21 +9,25 @@ describe("<Home/>...", () => {
 
     describe("renders properly the...", () => {
 
-        it("headline", () => {
-            render(<Home/>);
+        beforeEach(() => {
+            render(<Home />);
+        });
 
+        it("headline", () => {
             screen.getByRole("heading", {name: "FizzBuzz - Bewerber Quiz", level: 1});
         });
 
         it("input for target digit", () => {
-            render(<Home />);
-
             const input = screen.getByLabelText("Zielnummer", {});
             expect(input).toHaveProperty("name", "target_number");
             expect(input).toHaveAttribute("type", "number");
         });
 
-        it.todo("submit button");
+        it("submit button", () => {
+            const btn = screen.getByRole("button", {name: "Los geht's!"});
+
+            expect(btn).toHaveAttribute("type", "submit");
+        });
 
         it.todo("hint text that a digit greater 0 has to be submitted");
 

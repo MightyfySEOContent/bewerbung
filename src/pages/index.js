@@ -19,6 +19,7 @@ function Home() {
                     <span>Zielnummer</span>
                     <input type="number" name="target_number"/>
                 </label>
+                <button type="submit">Los geht's!</button>
             </main>
         </>
     );
