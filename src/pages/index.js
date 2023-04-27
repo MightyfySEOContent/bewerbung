@@ -15,6 +15,10 @@ function Home() {
 
             <main className={styles.main}>
                 <h1>FizzBuzz - Bewerber Quiz</h1>
+                <label>
+                    <span>Zielnummer</span>
+                    <input type="number" name="target_number"/>
+                </label>
             </main>
         </>
     );

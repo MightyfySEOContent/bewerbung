@@ -15,7 +15,13 @@ describe("<Home/>...", () => {
             screen.getByRole("heading", {name: "FizzBuzz - Bewerber Quiz", level: 1});
         });
 
-        it.todo("input for target digit");
+        it("input for target digit", () => {
+            render(<Home />);
+
+            const input = screen.getByLabelText("Zielnummer", {});
+            expect(input).toHaveProperty("name", "target_number");
+            expect(input).toHaveAttribute("type", "number");
+        });
 
         it.todo("submit button");
 
