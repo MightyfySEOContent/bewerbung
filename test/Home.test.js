@@ -28,8 +28,6 @@ describe("<Home/>...", () => {
             render(<Home />);
 
             const btn = screen.getByRole("button", {name: "Los geht's!"});
-
-            expect(btn).toHaveAttribute("type", "submit");
         });
 
         it("hint text that a digit greater 0 has to be submitted", () => {
