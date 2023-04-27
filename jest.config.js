@@ -9,7 +9,10 @@ module.exports = {
     collectCoverageFrom: [
         "src/**/*.{js,jsx}",
         "!**/node_modules/**",
-        "!src/pages/_app.js",
+        "!src/pages/_*.js",
     ],
-    coverageReporters: ["json", "html", "text"]
+    coverageReporters: ["json", "html", "text"],
+    coverageThreshold: {
+        global: {lines: "95"}
+    }
 };

@@ -12,7 +12,7 @@ function Home() {
             </Head>
 
             <main>
-                <h1>Hi FizzBuzz Quiz</h1>
+                <h1>Willkommen zum Bewerber Quiz - FizzBuzz</h1>
             </main>
         </>
     );

@@ -1,12 +1,12 @@
 import {render, screen} from "@testing-library/react";
 import Home from "@pages/index";
 
-describe("<Home/>...", ()=>{
+describe("<Home/>...", () => {
 
-    it("renders properly", ()=>{
+    it("renders properly", () => {
         render(<Home/>);
 
-        screen.getByRole("heading", {name: "Hi FizzBuzz Quiz", level: 1});
+        screen.getByRole("heading", {name: "Willkommen zum Bewerber Quiz - FizzBuzz", level: 1});
     });
 
 });
