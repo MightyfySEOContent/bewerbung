@@ -4,7 +4,7 @@ import Home, {EMPTY_RESULT_HINT} from "@pages/";
 describe("<Home/>...", () => {
 
     //-------------------------------------
-    //-  feel free to at more test cases  -
+    //-  feel free to add more test cases  -
     //-------------------------------------
 
     describe("renders properly the...", () => {
