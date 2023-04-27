@@ -19,6 +19,7 @@ function Home() {
                     <span>Zielnummer</span>
                     <input type="number" name="target_number"/>
                 </label>
+                <small>Es muss eine Zahl größer als 0 eingetragen werden.</small>
                 <button type="submit">Los geht's!</button>
             </main>
         </>

@@ -29,7 +29,9 @@ describe("<Home/>...", () => {
             expect(btn).toHaveAttribute("type", "submit");
         });
 
-        it.todo("hint text that a digit greater 0 has to be submitted");
+        it("hint text that a digit greater 0 has to be submitted", () => {
+            screen.getByText("Es muss eine Zahl größer als 0 eingetragen werden.", {selector: "small"});
+        });
 
         describe("result when...", () => {
 
