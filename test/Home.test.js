@@ -1,5 +1,6 @@
-import {render, screen} from "@testing-library/react";
+import {fireEvent, render, screen} from "@testing-library/react";
 import Home, {EMPTY_RESULT_HINT} from "@pages/";
+import userEvent from "@testing-library/user-event";
 
 describe("<Home/>...", () => {
 
@@ -9,27 +10,31 @@ describe("<Home/>...", () => {
 
     describe("renders properly the...", () => {
 
-        beforeEach(() => {
-            render(<Home />);
-        });
-
         it("headline", () => {
+            render(<Home />);
+
             screen.getByRole("heading", {name: "FizzBuzz - Bewerber Quiz", level: 1});
         });
 
         it("input for target digit", () => {
+            render(<Home />);
+
             const input = screen.getByLabelText("Zielnummer", {});
             expect(input).toHaveProperty("name", "target_number");
             expect(input).toHaveAttribute("type", "number");
         });
 
         it("submit button", () => {
+            render(<Home />);
+
             const btn = screen.getByRole("button", {name: "Los geht's!"});
 
             expect(btn).toHaveAttribute("type", "submit");
         });
 
         it("hint text that a digit greater 0 has to be submitted", () => {
+            render(<Home />);
+
             screen.getByText("Es muss eine Zahl größer als 0 eingetragen werden.", {selector: "small"});
         });
 
@@ -70,7 +75,9 @@ describe("<Home/>...", () => {
     });
 
     function submitFormWith(digit){
-        throw new Error("not implemented yet");
+        userEvent.type(screen.getByLabelText("Zielnummer", {}), digit);
+
+        fireEvent.click(screen.getByRole("button", {name: "Los geht's!"}));
     }
 
     function gainFocusOnInput() {
