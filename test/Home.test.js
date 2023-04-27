@@ -33,7 +33,7 @@ describe("<Home/>...", () => {
         it("hint text that a digit greater 0 has to be submitted", () => {
             render(<Home />);
 
-            screen.getByText("Es muss eine Zahl größer als 0 eingetragen werden.", {selector: "small"});
+            screen.getByText(EMPTY_RESULT_HINT, {selector: "small"});
         });
 
         describe("result when...", () => {
