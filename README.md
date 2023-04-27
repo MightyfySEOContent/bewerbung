@@ -10,9 +10,10 @@ Der Ablauf sieht dabei wie folgt aus:
 ### [Bewerber]:
 1. Klone dieses Projekt auf deine lokale Maschine.
 2. Checke einen neuen Git-Branch im folgendem Format aus YYYYMMDDhhmm-vorname-nachname (z.B. 202304270900-chuck-norris).
-3. Bearbeite die Aufgabe bis der Aufruf von npm test ohne Fehler durchläuft.
-4. Pushe dein Ergebnis wieder zurück auf origin (Du kannst gerne auch zwischendurch deinen Stand pushen).
-5. Schreibe eine E-Mail an dev-jobs@autohaus-koenig.de, in der du die Aufgabe offiziell als erledigt meldest. (Bitte gebe deinen Branchnamen in der E-Mail an!)
+3. Pushe deinen leeren Branch zurück auf origin
+4. Bearbeite die Aufgabe bis der Aufruf von npm test ohne Fehler durchläuft.
+5. Pushe dein Ergebnis wieder zurück auf origin (Du kannst gerne auch zwischendurch deinen Stand pushen).
+6. Schreibe eine E-Mail an dev-jobs@autohaus-koenig.de, in der du die Aufgabe offiziell als erledigt meldest. (Bitte gebe deinen Branchnamen in der E-Mail an!)
 
 ### [DevTeam]:
 1. … pullt den in der E-Mail angegebenen Branch.
