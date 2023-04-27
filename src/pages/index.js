@@ -14,7 +14,7 @@ function Home() {
             </Head>
 
             <main className={styles.main}>
-                <h1>Willkommen zum Bewerber Quiz - FizzBuzz</h1>
+                <h1>FizzBuzz - Bewerber Quiz</h1>
             </main>
         </>
     );

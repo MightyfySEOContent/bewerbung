@@ -12,7 +12,7 @@ describe("<Home/>...", () => {
         it("headline", () => {
             render(<Home/>);
 
-            screen.getByRole("heading", {name: "Willkommen zum Bewerber Quiz - FizzBuzz", level: 1});
+            screen.getByRole("heading", {name: "FizzBuzz - Bewerber Quiz", level: 1});
         });
 
         it.todo("input for target digit");
