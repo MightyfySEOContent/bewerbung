@@ -11,7 +11,7 @@ function Home() {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
-            <main>
+            <main className={styles.main}>
                 <h1>Willkommen zum Bewerber Quiz - FizzBuzz</h1>
             </main>
         </>
