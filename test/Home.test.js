@@ -3,9 +3,9 @@ import Home, {EMPTY_RESULT_HINT} from "@pages/";
 
 describe("<Home/>...", () => {
 
-    //-------------------------------------
+    //--------------------------------------
     //-  feel free to add more test cases  -
-    //-------------------------------------
+    //--------------------------------------
 
     describe("renders properly the...", () => {
 
@@ -31,8 +31,8 @@ describe("<Home/>...", () => {
                 // hint should be disappeared
                 expect(screen.queryByText(EMPTY_RESULT_HINT, {selector: ".result"})).toBeNull();
 
-                screen.getByText(/^1$/g, {selector: ".result li"});
-                screen.getByText(/^2$/g, {selector: ".result li"});
+                screen.getByText(/^1$/, {selector: ".result li"});
+                screen.getByText(/^2$/, {selector: ".result li"});
             });
 
             it.todo("Fizz has to be rendered");
@@ -50,7 +50,7 @@ describe("<Home/>...", () => {
     it("clears result list when input gains focus", async () => {
         render(<Home value={3}/>);
 
-        expect(screen.getAllByText("Fizz", {selector: ".result"})).toHaveLength(1);
+        expect(screen.getAllByText("Fizz", {selector: ".result li"})).toHaveLength(1);
 
         gainFocusOnInput();
 
